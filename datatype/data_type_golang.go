@@ -23,4 +23,63 @@ func main() {
 
 	/* ----------------------------- Float DataType ----------------------------- */
 
+	var a float32 = 3.142
+	var b float32 = 2.718
+
+	fmt.Printf("Float Value of A: %g\n", a)
+	fmt.Printf("Float Value of B: %g\n", b)
+
+	/* -------------------------- Arithmetic Operation -------------------------- */
+
+	fmt.Printf(
+		"Addition: %g + %g = %g\n",
+		a, b, a+b,
+	)
+
+	fmt.Printf(
+		"Subtraction: %g - %g = %g\n",
+		a, b, a-b,
+	)
+
+	fmt.Printf(
+		"Multiplication: %g * %g = %g\n",
+		a, b, a*b,
+	)
+
+	fmt.Printf(
+		"Division: %g / %g = %g\n",
+		a, b, a/b,
+	)
+
+	/* -------------------------------- Booleans -------------------------------- */
+
+	str1 := "GeeksforGeeks"
+	str2 := "geeksForgeeks"
+	str3 := "GeeksforGeeks"
+
+	result1 := str1 == str2
+	fmt.Println(result1)
+
+	result2 := str1 == str3
+	fmt.Println(result2)
+
+	/* --------------------------------- String --------------------------------- */
+
+	// str variable which stores strings
+	str := "GeeksforGeeks"
+	var str4 string = "STRING_"
+	var str5 string = "Concatenation"
+
+	// Display the length of the string
+	fmt.Printf("Length of the string is:%d",
+		len(str))
+
+	// Display the string
+	fmt.Printf("\nString is: %s", str)
+
+	// Display the type of str variable
+	fmt.Printf("\nType of str is: %T", str)
+
+	fmt.Println("\nNew string :", str4+str5)
+
 }
